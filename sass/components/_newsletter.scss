@@ -26,6 +26,12 @@
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__footer {
+    flex-direction: row;
+  }
+}
+
 .newsletter__email {
   width: 80vw;
   height: 50px;
@@ -48,6 +54,18 @@
 
   &:focus {
     border-color: var(--colorBlue);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter__email {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter__email {
+    width: 358px;
   }
 }
 

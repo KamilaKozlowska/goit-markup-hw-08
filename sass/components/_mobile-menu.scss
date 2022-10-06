@@ -51,7 +51,9 @@
     padding: 32px;
     background-color: var(--colorWhite);
     z-index: 999;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -90,21 +92,68 @@
     fill: currentColor;
 }
 
-.menu__nav-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 
-.menu__nav-link {
-    display: block;
-    padding: 10px;
-    color: var(--fontColorFirst);
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus{
-        color: var(--colorBlue);
-    }
+.menu{
+    
+    &__navigation-item:not(:last-child) {
+            margin-bottom: 36px;
+        }
+    
+        &__navigation-link {
+            color: var(--fontColorFirst);
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: 0.02;
+         
+    
+            &:hover {
+                color: var(--colorBlue);
+            }
+        }
+    
+        &__contact-list {
+            margin-bottom: 64px;
+        }
+    
+        &__contact-item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    
+        &__contact-link {
+            color: var(--fontColorSecond);
+            font-size: 24px;
+            font-weight: 500;
+    
+            &--accent {
+                color: var(--colorBlue);
+                font-size: 34px;
+                font-weight: 500;
+            }
+
+            &:hover,
+            &:focus{
+                color: var(--colorBlue);
+            }
+        }
+    
+        &__social-list {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        &__social-item:not(:last-child) {
+            border-right: 2px var(--contact-link-separator) solid;
+            padding-right: 10px;
+        }
+    
+        &__social-item:not(:first-child) {
+            padding-left: 10px;
+        }
+    
+        &__social-link {
+            color: var(--colorBlue);
+            font-size: 18px;
+            font-weight: 500;
+        }
 }

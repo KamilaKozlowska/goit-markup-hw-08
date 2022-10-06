@@ -10,12 +10,19 @@
   &__headline {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 00.03em;
     justify-content: center;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 30px auto;
+
+    @media screen and (min-width: 1200px) {
+        & {
+          font-size: 36px;
+          margin: 0 auto 50px auto;
+        }
+      }
   }
   &__list {
     display: flex;

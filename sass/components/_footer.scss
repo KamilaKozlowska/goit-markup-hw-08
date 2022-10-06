@@ -8,22 +8,44 @@
   background-color: var(--backgroundColorSecond);
   padding: 60px 0px 60px 0px;
   display: flex;
-  flex-direction: column;
   
-
   &__container {
     justify-content: space-between;
     gap: 60px;
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        & {
+          flex-wrap: nowrap;
+        }
+      }
   }
 
   &__wrap {
-    width: 100%;
+    flex-basis: calc((100% - 60px) / 2);
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      & {
+          flex-basis: 45%;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+          flex-basis: none;
+          align-items: flex-start;
+          text-align: left;
+      }
+    }
+
   }
 
   .logo--footer {
@@ -36,7 +58,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     color: var(--colorWhite);
     padding-top: 24px;
   }

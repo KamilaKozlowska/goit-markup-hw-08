@@ -49,8 +49,59 @@
             <span> +48 111 111 111</span></a>
         </li>
       </ul>
+      <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu__icon">
+          <use href="./images/icons.svg#mobile-menu-icon"></use>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <!--MENU-->
+
+  <div class="menu__container js-menu-container" id="mobile-menu">
+    <button class="menu__close-button js-close-menu">
+      <svg class="menu__close-icon">
+        <use href="./images/icons.svg#x"></use>
+      </svg>
+    </button>
+
+    <ul class="menu__navigation-list">
+      <li class="menu__navigation-item">
+        <a class="menu__navigation-link" href="./index.html">Agencja</a>
+      </li>
+      <li class="menu__navigation-item">
+        <a class="menu__navigation-link" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="menu__navigation-item">
+        <a class="menu__navigation-link" href="">Kontakt</a>
+      </li>
+    </ul>
+    <div>
+      <ul class="menu__contact-list">
+        <li class="menu__contact-item">
+          <a class="menu__contact-link--accent" href="tel:+48111111111">+48 111 111
+            111</a>
+        </li>
+        <li class="menu__contact-item">
+          <a class="menu__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="menu__social-list">
+        <li class="menu__social-item"><a href="" class="menu__social-link">Instagram</a></li>
+        <li class="menu__social-item"><a href="" class="menu__social-link">Twitter</a></li>
+        <li class="menu__social-item"><a href="" class="menu__social-link">Facebook</a></li>
+        <li class="menu__social-item"><a href="" class="menu__social-link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+
   <main>
     <section class="gallery section">
       <div class="container">
@@ -76,10 +127,8 @@
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
                 <div class="gallery__thumb">
-                  <img class="gallery__photo" 
-                  src="images/image4.jpg" 
-                  srcset="images/image4.jpg 1x, images/image4@2x.jpg 2x"
-                  alt="ekran monitoru z trzema osobami" />
+                  <img class="gallery__photo" src="images/image4.jpg"
+                    srcset="images/image4.jpg 1x, images/image4@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
                 </div>
                 <div class="gallery__description">
                   <p>
@@ -99,13 +148,11 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
-              <div class="gallery__thumb">
-                <img class="gallery__photo" 
-                src="images/image5.jpg" 
-                srcset="images/image5.jpg 1x, images/image5@2x.jpg 2x"
-                alt="ekran monitoru z trzema osobami" />
-              </div> 
-              <div class="gallery__description">
+                <div class="gallery__thumb">
+                  <img class="gallery__photo" src="images/image5.jpg"
+                    srcset="images/image5.jpg 1x, images/image5@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
+                </div>
+                <div class="gallery__description">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -125,13 +172,11 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
-              <div class="gallery__thumb">
-                <img class="gallery__photo" 
-                src="images/image6.jpg" 
-                  srcset="images/image6.jpg 1x, images/image6@2x.jpg 2x"
-                alt="ekran monitoru z trzema osobami" />
-              </div> 
-              <div class="gallery__description">
+                <div class="gallery__thumb">
+                  <img class="gallery__photo" src="images/image6.jpg"
+                    srcset="images/image6.jpg 1x, images/image6@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
+                </div>
+                <div class="gallery__description">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -149,13 +194,11 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
-              <div class="gallery__thumb">
-                <img class="gallery__photo" 
-                src="images/image7.jpg" 
-                srcset="images/image7.jpg 1x, images/image7@2x.jpg 2x"
-                alt="ekran monitoru z trzema osobami" />
-              </div> 
-              <div class="gallery__description">
+                <div class="gallery__thumb">
+                  <img class="gallery__photo" src="images/image7.jpg"
+                    srcset="images/image7.jpg 1x, images/image7@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
+                </div>
+                <div class="gallery__description">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -174,10 +217,8 @@
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
                 <div class="gallery__thumb">
-                  <img class="gallery__photo" 
-                  src="images/image8.jpg" 
-                    srcset="images/image8.jpg 1x, images/image8@2x.jpg 2x"
-                  alt="ekran monitoru z trzema osobami" />
+                  <img class="gallery__photo" src="images/image8.jpg"
+                    srcset="images/image8.jpg 1x, images/image8@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
                 </div>
                 <div class="gallery__description">
                   <p>
@@ -198,10 +239,8 @@
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
                 <div class="gallery__thumb">
-                  <img class="gallery__photo" 
-                  src="images/image9.jpg" 
-                    srcset="images/image9.jpg 1x, images/image9@2x.jpg 2x"
-                  alt="ekran monitoru z trzema osobami" />
+                  <img class="gallery__photo" src="images/image9.jpg"
+                    srcset="images/image9.jpg 1x, images/image9@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
                 </div>
                 <div class="gallery__description">
                   <p>
@@ -222,10 +261,8 @@
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
                 <div class="gallery__thumb">
-                  <img class="gallery__photo" 
-                  src="images/image10.jpg" 
-                  srcset="images/image10.jpg 1x, images/image10@2x.jpg 2x"
-                  alt="ekran monitoru z trzema osobami" />
+                  <img class="gallery__photo" src="images/image10.jpg"
+                    srcset="images/image10.jpg 1x, images/image10@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
                 </div>
                 <div class="gallery__description">
                   <p>
@@ -245,13 +282,11 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
-              <div class="gallery__thumb">
-                <img class="gallery__photo" 
-                src="images/image11.jpg"
-                  srcset="images/image11.jpg 1x, images/image11@2x.jpg 2x"
-                alt="ekran monitoru z trzema osobami" />
-              </div> 
-              <div class="gallery__description">
+                <div class="gallery__thumb">
+                  <img class="gallery__photo" src="images/image11.jpg"
+                    srcset="images/image11.jpg 1x, images/image11@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
+                </div>
+                <div class="gallery__description">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -270,10 +305,8 @@
             <a class="gallery__link" href="#">
               <div class="gallery__relative">
                 <div class="gallery__thumb">
-                  <img class="gallery__photo" 
-                  src="images/image12.jpg" 
-                  srcset="images/image12.jpg 1x, images/image12@2x.jpg 2x"
-                  alt="ekran monitoru z trzema osobami" />
+                  <img class="gallery__photo" src="images/image12.jpg"
+                    srcset="images/image12.jpg 1x, images/image12@2x.jpg 2x" alt="ekran monitoru z trzema osobami" />
                 </div>
                 <div class="gallery__description">
                   <p>
@@ -357,5 +390,12 @@
       </div>
     </div>
   </footer>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
+  <script src="./js/mobile-menu.js"></script>
 </body>
+
 </html>
