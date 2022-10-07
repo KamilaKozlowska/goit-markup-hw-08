@@ -1477,7 +1477,7 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - (100vh - 100%));
   padding: 32px;
   background-color: var(--colorWhite);
   z-index: 999;
