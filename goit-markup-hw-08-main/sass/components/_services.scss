@@ -1,0 +1,52 @@
+.services__container {
+  flex-direction: column;
+  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .services__container {
+    display: block;
+  }
+}
+
+.services__headline {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+}
+
+.services__list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 30px;
+}
+
+/*NAPIS CZYM SIĘ ZAJMUJEMY WHAT-WE-DO NAPIS*/
+.services__item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.services__caption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--colorWhite);
+  background: var(--color-transparent-what-we-do);
+}
