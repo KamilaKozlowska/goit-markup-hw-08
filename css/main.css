@@ -263,7 +263,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 118px 58px;
+  padding: 118px 57px 0 57px;
   height: 400px;
   flex-direction: column;
   -webkit-box-align: center;
@@ -910,8 +910,12 @@ header {
             flex-direction: row;
   }
 }
+.newsletter__label {
+  width: 100%;
+}
+
 .newsletter__email {
-  width: 450px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
