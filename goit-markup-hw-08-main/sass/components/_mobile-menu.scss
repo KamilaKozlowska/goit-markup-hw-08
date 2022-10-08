@@ -111,6 +111,12 @@
                 color: var(--colorBlue);
             }
         }
+
+         &__navigation-link--current {
+            color: var(--colorBlue);
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: 0.02;}
     
         &__contact-list {
             margin-bottom: 64px;
