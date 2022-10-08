@@ -26,10 +26,14 @@
     }
   }
 
+    @media screen and (min-width: 1200px) {
+      &__item:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+
+
 
   &__link {
     color: var(--fontColorSecond);

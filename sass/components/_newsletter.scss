@@ -17,6 +17,12 @@
   color: var(--colorWhite);
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__heading {
+    text-align: left;
+  }
+}
+
 .newsletter__footer {
   display: flex;
   flex-direction: column;
@@ -35,6 +41,14 @@
 
 .newsletter__label{
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter__label {
+      width: auto;
+  }
 }
 
 .newsletter__email {
@@ -62,6 +76,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .newsletter__email {
+    width: 450px;
+    margin: auto;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .newsletter__email {
@@ -72,9 +92,9 @@
 .newsletter__button {
   font-weight: 700;
   font-size: 16px;
-  width: 201px;
+  width: 200px;
   line-height: 1.875;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   padding: 10px 28px 10px 42px;
   display: flex;
   align-items: center;

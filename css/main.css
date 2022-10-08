@@ -217,8 +217,10 @@ header {
     gap: 0px;
   }
 }
-.contact__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .contact__link {
   color: var(--fontColorSecond);
@@ -263,7 +265,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 118px 57px 0 57px;
+  padding-top: 118px;
+  padding-left: 57px;
+  padding-right: 57px;
   height: 400px;
   flex-direction: column;
   -webkit-box-align: center;
@@ -489,6 +493,7 @@ header {
           flex-direction: column;
 }
 .team__headline {
+  padding-bottom: 30px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 28px;
@@ -541,8 +546,8 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 .team__thumb {
@@ -881,6 +886,11 @@ header {
   color: var(--colorWhite);
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__heading {
+    text-align: left;
+  }
+}
 .newsletter__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -912,8 +922,19 @@ header {
 }
 .newsletter__label {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__label {
+    width: auto;
+  }
+}
 .newsletter__email {
   width: 100%;
   height: 50px;
@@ -955,6 +976,12 @@ header {
   border-color: var(--colorBlue);
 }
 
+@media screen and (min-width: 768px) {
+  .newsletter__email {
+    width: 450px;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .newsletter__email {
     width: 358px;
@@ -963,9 +990,9 @@ header {
 .newsletter__button {
   font-weight: 700;
   font-size: 16px;
-  width: 201px;
+  width: 200px;
   line-height: 1.875;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   padding: 10px 28px 10px 42px;
   display: -webkit-box;
   display: -ms-flexbox;

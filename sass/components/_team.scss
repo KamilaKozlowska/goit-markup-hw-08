@@ -8,6 +8,7 @@
   }
 
   &__headline {
+    padding-bottom: 30px;
     font-family: "Roboto";
     font-weight: 700;
     font-size: 28px;
@@ -51,7 +52,7 @@
 
   @media screen and (min-width: 1200px) {
     &__item {
-      flex-basis: calc((100% - 120px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
 
