@@ -22,7 +22,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  row-gap: 20px;
+  column-gap: 12px;
   width: 100%;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .newsletter__email {
-  width: 80vw;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -57,11 +58,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .newsletter__email {
-    width: 450px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .newsletter__email {
